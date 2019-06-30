@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="40dp"
+        android:entries="@array/beer_colors" />
 
     <Button
         android:id="@+id/button"
@@ -23,14 +24,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:text="DEMO" />
+        android:onClick="onClickFindBeer"
+        android:text="@string/find_beer" />
 
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is a text view"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/brands"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
